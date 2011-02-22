@@ -1,4 +1,4 @@
-#N canvas 140 138 1030 537 10;
+#N canvas 133 275 1030 537 10;
 #X floatatom 100 100 5 0 0 0 - r-col#1-cell1 s-col#1-cell1;
 #X floatatom 100 125 5 0 0 0 - r-col#1-cell2 s-col#1-cell2;
 #X floatatom 100 150 5 0 0 0 - r-col#1-cell3 s-col#1-cell3;
@@ -43,6 +43,8 @@
 #X obj -399 169 s reset-pb;
 #X obj -428 198 s r-col\$1-cell4;
 #X obj -428 224 r s-col\$1-cell4;
+#X obj -179 102 preset_loader \$1;
+#X obj -177 53 r s-preset-col\$1;
 #X connect 4 0 17 0;
 #X connect 5 0 10 0;
 #X connect 6 0 19 0;
