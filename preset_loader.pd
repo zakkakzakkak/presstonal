@@ -1,0 +1,12 @@
+#N canvas 363 204 606 348 10;
+#X obj 118 16 inlet;
+#X obj 118 68 unpack f f f f f f f;
+#X obj 118 124 s r-col\$1-cell1;
+#X obj 137 146 s r-col\$1-cell2;
+#X obj 157 168 s r-col\$1-cell3;
+#X obj 176 190 s r-col\$1-cell4;
+#X connect 0 0 1 0;
+#X connect 1 0 2 0;
+#X connect 1 1 3 0;
+#X connect 1 2 4 0;
+#X connect 1 3 5 0;
