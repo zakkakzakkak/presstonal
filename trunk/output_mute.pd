@@ -1,0 +1,12 @@
+#N canvas 683 285 450 300 10;
+#X obj 131 25 inlet;
+#X obj 131 104 s output\$1;
+#X msg 131 67 0;
+#X msg 87 192 1;
+#X obj 82 222 s output\$1;
+#X obj 100 139 delay \$2;
+#X connect 0 0 2 0;
+#X connect 2 0 1 0;
+#X connect 2 0 5 0;
+#X connect 3 0 4 0;
+#X connect 5 0 3 0;
