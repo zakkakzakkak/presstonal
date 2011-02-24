@@ -1,4 +1,4 @@
-#N canvas 239 108 1000 535 10;
+#N canvas 228 208 1000 535 10;
 #X obj -544 26 inlet;
 #N canvas 465 447 450 300 cents_to_pb 0;
 #X obj 133 50 inlet;
@@ -8,7 +8,7 @@
 #X connect 0 0 2 0;
 #X connect 2 0 3 0;
 #X connect 3 0 1 0;
-#X restore -526 317 pd cents_to_pb;
+#X restore -109 300 pd cents_to_pb;
 #X obj -721 150 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #X obj -607 150 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
@@ -17,15 +17,15 @@
 -1 -1;
 #X obj -374 150 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X floatatom -526 423 5 0 0 0 - - -;
+#X floatatom -109 406 5 0 0 0 - - -;
 #X floatatom -374 479 5 0 0 0 - - -;
-#X msg -572 407 0;
+#X msg -155 390 0;
 #N canvas 492 283 450 300 pipe 0;
 #X obj 161 48 inlet;
 #X obj 161 147 outlet;
 #X connect 0 0 1 0;
 #X restore -544 52 pd pipe;
-#X obj -634 313 r reset-pb;
+#X obj -217 296 r reset-pb;
 #X obj -721 198 s r-col\$1-cell1;
 #X obj -721 224 r s-col\$1-cell1;
 #X obj -607 198 s r-col\$1-cell2;
@@ -35,8 +35,8 @@
 #X obj -345 169 s reset-pb;
 #X obj -374 198 s r-col\$1-cell4;
 #X obj -374 224 r s-col\$1-cell4;
-#X obj -165 365 preset_loader \$1;
-#X obj -165 326 r s-preset-col\$1;
+#X obj -47 491 preset_loader \$1;
+#X obj -47 452 r s-preset-col\$1;
 #X obj -721 113 simple_gate \$2;
 #X obj -607 113 simple_gate \$3;
 #X obj -473 106 simple_gate \$4;
@@ -70,17 +70,18 @@ empty 0 -8 0 10 -257985 -1 -1 -150 256;
 empty 0 -8 0 10 -260097 -1 -1 100 256;
 #X obj 101 101 nbx 4 14 -200 200 0 0 s-col\$1-cell1 r-col\$1-cell1
 empty 0 -8 0 10 -257985 -1 -1 150 256;
-#X obj -47 326 r s-oct-up\$1;
-#X obj 52 326 r s-oct-down\$1;
+#X obj 71 452 r s-oct-up\$1;
+#X obj 170 452 r s-oct-down\$1;
 #X obj -374 346 spigot;
 #X obj -341 319 r output\$1;
-#X obj -526 380 spigot;
-#X obj -493 353 r output\$1;
-#X obj -47 365 octave_changer \$1;
-#X obj -20 283 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
--1 -1;
-#X obj 69 283 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+#X obj -109 363 spigot;
+#X obj -76 336 r output\$1;
+#X obj 71 491 octave_changer \$1;
+#X obj 98 409 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
+#X obj 187 409 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj -311 357 print output;
 #X connect 0 0 9 0;
 #X connect 1 0 49 0;
 #X connect 2 0 11 0;
@@ -125,6 +126,7 @@ empty 0 -8 0 10 -257985 -1 -1 150 256;
 #X connect 46 0 51 1;
 #X connect 47 0 7 0;
 #X connect 48 0 47 1;
+#X connect 48 0 54 0;
 #X connect 49 0 6 0;
 #X connect 50 0 49 1;
 #X connect 52 0 51 0;
