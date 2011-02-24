@@ -1,4 +1,4 @@
-#N canvas 363 204 441 348 10;
+#N canvas 580 130 441 348 10;
 #X obj 166 28 inlet;
 #X obj 166 80 unpack f f f f f f f;
 #X obj 166 135 s r-col\$1-cell1;
@@ -8,9 +8,7 @@
 #X obj 245 226 s r-col\$1-cell5;
 #X obj 263 246 s r-col\$1-cell6;
 #X obj 283 265 s r-col\$1-cell7;
-#X obj 6 79 output_mute \$1 10;
 #X connect 0 0 1 0;
-#X connect 0 0 9 0;
 #X connect 1 0 2 0;
 #X connect 1 1 3 0;
 #X connect 1 2 4 0;
